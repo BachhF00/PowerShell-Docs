@@ -38,7 +38,7 @@ These commands set the value of the desc variable to A description, and then get
 
 ### Example 2: Set a global, read-only variable
 ```
-PS C:\> Set-Variable -Name "processes" -Value (Get-Process) -Option constant -Scope global -Description "All processes" -PassThru | Format-List -Property *
+PS C:\> Set-Variable -Name "processes" -Value (Get-Process) -Option ReadOnly -Scope global -Description "All processes" -PassThru | Format-List -Property *
 ```
 
 This command creates a global, read-only variable that contains all processes on the system, and then it displays all properties of the variable.
